@@ -22,5 +22,8 @@
         "psr-4": {
             "vova07\\rbac\\": ""
         }
+    },
+    "extra": {
+        "bootstrap": "vova07\\rbac\\Bootstrap"
     }
 }
