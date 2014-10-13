@@ -2,6 +2,7 @@
 
 namespace vova07\rbac\commands;
 
+use vova07\rbac\rules\AuthorRule;
 use Yii;
 use yii\console\Controller;
 
@@ -22,6 +23,10 @@ class RbacController extends Controller
     {
         $auth = Yii::$app->authManager;
         $auth->removeAll();
+
+        // Rules
+        $authorRule = new AuthorRule();
+        $auth->add($authorRule);
 
         // Permissions
         $accessBackend = $auth->createPermission('accessBackend');
