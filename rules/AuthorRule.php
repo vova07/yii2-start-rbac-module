@@ -9,7 +9,7 @@ class AuthorRule extends Rule
     /**
      * @inheritdoc
      */
-    public $name = 'autor';
+    public $name = 'author';
 
     /**
      * @inheritdoc
