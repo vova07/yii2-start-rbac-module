@@ -1,3 +1,5 @@
+# WARNING: This extension is not more maintained
+
 Yii2 RBAC module.
 ==================
 This module provide an RBAC managing system for your yii2 application.
